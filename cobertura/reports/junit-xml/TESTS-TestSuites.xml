@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="BDC8-LX-B627QQ2" id="0" name="AgeCalcTest" package="test.calc" skipped="0" tests="2" time="0.388" timestamp="2018-08-28T08:01:34">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sonar.projectName" value="Calculator-V1" />
+
+          <property name="eclipse.pdebuild.templates" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/templates/" />
+
+          <property name="sonar.java.binaries" value="build\classes" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="cob.reports.xml.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-xml&quot;" />
+
+          <property name="cobertura-check" value="net.sourceforge.cobertura.ant.CheckTask" />
+
+          <property name="cobertura-merge" value="net.sourceforge.cobertura.ant.MergeTask" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_151\lib\resources.jar;C:\Program Files\Java\jre1.8.0_151\lib\rt.jar;C:\Program Files\Java\jre1.8.0_151\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_151\lib\jce.jar;C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_151\classes" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="C:\ANT-Project\calc-ant-v1\cobertura.ser" />
+
+          <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="sonar.projectVersion" value="1.0" />
+
+          <property name="java.runtime.version" value="1.8.0_151-b12" />
+
+          <property name="ant.file.calculator" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="cobertura.dir" value="C:\cobertura-2.1.1" />
+
+          <property name="user.name" value="r.thirumalai.ramesh" />
+
+          <property name="ant.file.type.calculator" value="file" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin" />
+
+          <property name="cob.reports.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-html&quot;" />
+
+          <property name="ant.project.name" value="calculator" />
+
+          <property name="java.version" value="1.8.0_151" />
+
+          <property name="cobertura-instrument" value="net.sourceforge.cobertura.ant.InstrumentTask" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="sonar.host.url" value="http://localhost:9000" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="cobertura-report" value="net.sourceforge.cobertura.ant.ReportTask" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sonar.sources" value="src" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="IN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jre1.8.0_151" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="sonar.libraries" value="&quot;.\lib\sonarqube-ant-task-2.5.jar&quot;" />
+
+          <property name="ant.file" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.151-b12" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/scripts/" />
+
+          <property name="user.home" value="C:\Users\r.thirumalai.ramesh" />
+
+          <property name="sonar.language" value="java" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\sonar-scanner\bin;C:\apache-maven-3.5.2\bin;C:\apache-ant-1.10.1\bin;C:\gradle-4.4\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\r.thirumalai.ramesh\AppData\Local\Microsoft\WindowsApps;C:\Git\cmd;C:\eclipse;;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.calc.AgeCalcTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\ANT-Project\calc-ant-v1\build\report\TEST-test.calc.AgeCalcTest.xml crashfile=C:\ANT-Project\calc-ant-v1\junitvmwatcher1572050139809138643.properties propsfile=C:\ANT-Project\calc-ant-v1\junit1781091417425958100.properties" />
+
+          <property name="java.class.path" value="C:\ANT-Project\calc-ant-v1\cobertura\instrumented;C:\ANT-Project\calc-ant-v1\build\classes;C:\cobertura-2.1.1\cobertura-2.1.1-javadoc.jar;C:\cobertura-2.1.1\cobertura-2.1.1-sources.jar;C:\cobertura-2.1.1\cobertura-2.1.1.jar;C:\cobertura-2.1.1\lib\asm-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-analysis-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-commons-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-tree-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-util-5.0.1.jar;C:\cobertura-2.1.1\lib\commons-lang3-3.3.2.jar;C:\cobertura-2.1.1\lib\hamcrest-core-1.3.jar;C:\cobertura-2.1.1\lib\jaxen-1.1.4.jar;C:\cobertura-2.1.1\lib\jetty-6.1.14.jar;C:\cobertura-2.1.1\lib\jetty-util-6.1.14.jar;C:\cobertura-2.1.1\lib\junit-4.11.jar;C:\cobertura-2.1.1\lib\logback-classic-1.0.13.jar;C:\cobertura-2.1.1\lib\logback-core-1.0.13.jar;C:\cobertura-2.1.1\lib\oro-2.0.8.jar;C:\cobertura-2.1.1\lib\servlet-api-2.5-6.1.14.jar;C:\cobertura-2.1.1\lib\slf4j-api-1.7.5.jar;C:\ANT-Project\calc-ant-v1\lib\org.junit_4.12.0.v201504281640\junit.jar;C:\ANT-Project\calc-ant-v1\lib\hamcrest-core-1.3.jar;C:\ANT-Project\calc-ant-v1\lib\log4j-1.2.17.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="cob.reports.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sonar.sourceEncoding" value="UTF-8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="eclipse.pdebuild.home" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/./" />
+
+          <property name="java.io.tmpdir" value="C:\Users\RTHIRU~1.RAM\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="cob.coverage.xml.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-xml" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\ext;C:\windows\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="cob.coverage.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-html&quot;" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="cob.instrumented.dir" value="&quot;C:\cobertura-2.1.1/instrumented&quot;" />
+
+          <property name="ant.project.invoked-targets" value="clean,compile,instrument,test,coverage-report,sonar,war,copy" />
+
+          <property name="sonar.projectKey" value="CalcKey" />
+
+      </properties>
+
+      <testcase classname="test.calc.AgeCalcTest" name="testCalculateAge_1" time="0.317" />
+
+      <testcase classname="test.calc.AgeCalcTest" name="testCalculateAge_2" time="0.0" />
+
+      <system-out><![CDATA[13:31:34,667 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:31:34,668 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:31:34,668 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:34,670 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+13:31:34,670 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:34,670 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+13:31:34,690 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4590c9c3 - URL [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+13:31:34,741 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:31:34,743 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:31:34,751 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:31:34,771 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:31:34,845 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+13:31:34,845 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+13:31:34,845 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:31:34,845 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:31:34,846 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@32e6e9c3 - Registering current configuration as safe fallback point
+
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="BDC8-LX-B627QQ2" id="1" name="CalcTest" package="test.calc" skipped="0" tests="7" time="0.293" timestamp="2018-08-28T08:01:36">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sonar.projectName" value="Calculator-V1" />
+
+          <property name="eclipse.pdebuild.templates" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/templates/" />
+
+          <property name="sonar.java.binaries" value="build\classes" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="cob.reports.xml.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-xml&quot;" />
+
+          <property name="cobertura-check" value="net.sourceforge.cobertura.ant.CheckTask" />
+
+          <property name="cobertura-merge" value="net.sourceforge.cobertura.ant.MergeTask" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_151\lib\resources.jar;C:\Program Files\Java\jre1.8.0_151\lib\rt.jar;C:\Program Files\Java\jre1.8.0_151\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_151\lib\jce.jar;C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_151\classes" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="C:\ANT-Project\calc-ant-v1\cobertura.ser" />
+
+          <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="sonar.projectVersion" value="1.0" />
+
+          <property name="java.runtime.version" value="1.8.0_151-b12" />
+
+          <property name="ant.file.calculator" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="cobertura.dir" value="C:\cobertura-2.1.1" />
+
+          <property name="user.name" value="r.thirumalai.ramesh" />
+
+          <property name="ant.file.type.calculator" value="file" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin" />
+
+          <property name="cob.reports.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-html&quot;" />
+
+          <property name="ant.project.name" value="calculator" />
+
+          <property name="java.version" value="1.8.0_151" />
+
+          <property name="cobertura-instrument" value="net.sourceforge.cobertura.ant.InstrumentTask" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="sonar.host.url" value="http://localhost:9000" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="cobertura-report" value="net.sourceforge.cobertura.ant.ReportTask" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sonar.sources" value="src" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="IN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jre1.8.0_151" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="sonar.libraries" value="&quot;.\lib\sonarqube-ant-task-2.5.jar&quot;" />
+
+          <property name="ant.file" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.151-b12" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/scripts/" />
+
+          <property name="user.home" value="C:\Users\r.thirumalai.ramesh" />
+
+          <property name="sonar.language" value="java" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\sonar-scanner\bin;C:\apache-maven-3.5.2\bin;C:\apache-ant-1.10.1\bin;C:\gradle-4.4\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\r.thirumalai.ramesh\AppData\Local\Microsoft\WindowsApps;C:\Git\cmd;C:\eclipse;;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.calc.CalcTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\ANT-Project\calc-ant-v1\build\report\TEST-test.calc.CalcTest.xml crashfile=C:\ANT-Project\calc-ant-v1\junitvmwatcher2325537003926625638.properties propsfile=C:\ANT-Project\calc-ant-v1\junit3509568180442699718.properties" />
+
+          <property name="java.class.path" value="C:\ANT-Project\calc-ant-v1\cobertura\instrumented;C:\ANT-Project\calc-ant-v1\build\classes;C:\cobertura-2.1.1\cobertura-2.1.1-javadoc.jar;C:\cobertura-2.1.1\cobertura-2.1.1-sources.jar;C:\cobertura-2.1.1\cobertura-2.1.1.jar;C:\cobertura-2.1.1\lib\asm-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-analysis-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-commons-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-tree-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-util-5.0.1.jar;C:\cobertura-2.1.1\lib\commons-lang3-3.3.2.jar;C:\cobertura-2.1.1\lib\hamcrest-core-1.3.jar;C:\cobertura-2.1.1\lib\jaxen-1.1.4.jar;C:\cobertura-2.1.1\lib\jetty-6.1.14.jar;C:\cobertura-2.1.1\lib\jetty-util-6.1.14.jar;C:\cobertura-2.1.1\lib\junit-4.11.jar;C:\cobertura-2.1.1\lib\logback-classic-1.0.13.jar;C:\cobertura-2.1.1\lib\logback-core-1.0.13.jar;C:\cobertura-2.1.1\lib\oro-2.0.8.jar;C:\cobertura-2.1.1\lib\servlet-api-2.5-6.1.14.jar;C:\cobertura-2.1.1\lib\slf4j-api-1.7.5.jar;C:\ANT-Project\calc-ant-v1\lib\org.junit_4.12.0.v201504281640\junit.jar;C:\ANT-Project\calc-ant-v1\lib\hamcrest-core-1.3.jar;C:\ANT-Project\calc-ant-v1\lib\log4j-1.2.17.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="cob.reports.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sonar.sourceEncoding" value="UTF-8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="eclipse.pdebuild.home" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/./" />
+
+          <property name="java.io.tmpdir" value="C:\Users\RTHIRU~1.RAM\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="cob.coverage.xml.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-xml" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\ext;C:\windows\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="cob.coverage.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-html&quot;" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="cob.instrumented.dir" value="&quot;C:\cobertura-2.1.1/instrumented&quot;" />
+
+          <property name="ant.project.invoked-targets" value="clean,compile,instrument,test,coverage-report,sonar,war,copy" />
+
+          <property name="sonar.projectKey" value="CalcKey" />
+
+      </properties>
+
+      <testcase classname="test.calc.CalcTest" name="testDoSub" time="0.002" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoAdd1" time="0.0" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoAdd2" time="0.0" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoDiv1" time="0.0" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoDiv2" time="0.0" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoMul1" time="0.0" />
+
+      <testcase classname="test.calc.CalcTest" name="testDoMul2" time="0.0" />
+
+      <system-out><![CDATA[13:31:36,792 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:31:36,792 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:31:36,792 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:36,793 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+13:31:36,793 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:36,793 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+13:31:36,811 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@3dd3bcd - URL [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+13:31:36,860 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:31:36,862 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:31:36,870 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:31:36,890 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:31:36,961 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+13:31:36,961 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+13:31:36,961 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:31:36,962 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:31:36,962 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@97e1986 - Registering current configuration as safe fallback point
+
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="BDC8-LX-B627QQ2" id="2" name="EMICalcTest" package="test.calc" skipped="0" tests="1" time="0.347" timestamp="2018-08-28T08:01:38">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sonar.projectName" value="Calculator-V1" />
+
+          <property name="eclipse.pdebuild.templates" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/templates/" />
+
+          <property name="sonar.java.binaries" value="build\classes" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="cob.reports.xml.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-xml&quot;" />
+
+          <property name="cobertura-check" value="net.sourceforge.cobertura.ant.CheckTask" />
+
+          <property name="cobertura-merge" value="net.sourceforge.cobertura.ant.MergeTask" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_151\lib\resources.jar;C:\Program Files\Java\jre1.8.0_151\lib\rt.jar;C:\Program Files\Java\jre1.8.0_151\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_151\lib\jce.jar;C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_151\classes" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="C:\ANT-Project\calc-ant-v1\cobertura.ser" />
+
+          <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="sonar.projectVersion" value="1.0" />
+
+          <property name="java.runtime.version" value="1.8.0_151-b12" />
+
+          <property name="ant.file.calculator" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="cobertura.dir" value="C:\cobertura-2.1.1" />
+
+          <property name="user.name" value="r.thirumalai.ramesh" />
+
+          <property name="ant.file.type.calculator" value="file" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin" />
+
+          <property name="cob.reports.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/junit-html&quot;" />
+
+          <property name="ant.project.name" value="calculator" />
+
+          <property name="java.version" value="1.8.0_151" />
+
+          <property name="cobertura-instrument" value="net.sourceforge.cobertura.ant.InstrumentTask" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="sonar.host.url" value="http://localhost:9000" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="cobertura-report" value="net.sourceforge.cobertura.ant.ReportTask" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="sonar.sources" value="src" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="IN" />
+
+          <property name="java.home" value="C:\Program Files\Java\jre1.8.0_151" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="sonar.libraries" value="&quot;.\lib\sonarqube-ant-task-2.5.jar&quot;" />
+
+          <property name="ant.file" value="C:\ANT-Project\calc-ant-v1\build.xml" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.151-b12" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="eclipse.pdebuild.scripts" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/scripts/" />
+
+          <property name="user.home" value="C:\Users\r.thirumalai.ramesh" />
+
+          <property name="sonar.language" value="java" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_151\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\sonar-scanner\bin;C:\apache-maven-3.5.2\bin;C:\apache-ant-1.10.1\bin;C:\gradle-4.4\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\r.thirumalai.ramesh\AppData\Local\Microsoft\WindowsApps;C:\Git\cmd;C:\eclipse;;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner test.calc.EMICalcTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\ANT-Project\calc-ant-v1\build\report\TEST-test.calc.EMICalcTest.xml crashfile=C:\ANT-Project\calc-ant-v1\junitvmwatcher3751002003612381671.properties propsfile=C:\ANT-Project\calc-ant-v1\junit5968471960895890118.properties" />
+
+          <property name="java.class.path" value="C:\ANT-Project\calc-ant-v1\cobertura\instrumented;C:\ANT-Project\calc-ant-v1\build\classes;C:\cobertura-2.1.1\cobertura-2.1.1-javadoc.jar;C:\cobertura-2.1.1\cobertura-2.1.1-sources.jar;C:\cobertura-2.1.1\cobertura-2.1.1.jar;C:\cobertura-2.1.1\lib\asm-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-analysis-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-commons-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-tree-5.0.1.jar;C:\cobertura-2.1.1\lib\asm-util-5.0.1.jar;C:\cobertura-2.1.1\lib\commons-lang3-3.3.2.jar;C:\cobertura-2.1.1\lib\hamcrest-core-1.3.jar;C:\cobertura-2.1.1\lib\jaxen-1.1.4.jar;C:\cobertura-2.1.1\lib\jetty-6.1.14.jar;C:\cobertura-2.1.1\lib\jetty-util-6.1.14.jar;C:\cobertura-2.1.1\lib\junit-4.11.jar;C:\cobertura-2.1.1\lib\logback-classic-1.0.13.jar;C:\cobertura-2.1.1\lib\logback-core-1.0.13.jar;C:\cobertura-2.1.1\lib\oro-2.0.8.jar;C:\cobertura-2.1.1\lib\servlet-api-2.5-6.1.14.jar;C:\cobertura-2.1.1\lib\slf4j-api-1.7.5.jar;C:\ANT-Project\calc-ant-v1\lib\org.junit_4.12.0.v201504281640\junit.jar;C:\ANT-Project\calc-ant-v1\lib\hamcrest-core-1.3.jar;C:\ANT-Project\calc-ant-v1\lib\log4j-1.2.17.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="cob.reports.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sonar.sourceEncoding" value="UTF-8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="eclipse.pdebuild.home" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.200.v20160204-0642/./" />
+
+          <property name="java.io.tmpdir" value="C:\Users\RTHIRU~1.RAM\AppData\Local\Temp\" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="cob.coverage.xml.dir" value="&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-xml" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_151\lib\ext;C:\windows\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="C:\ANT-Project\calc-ant-v1" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.9.6.v201510161327\lib\ant.jar" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="cob.coverage.html.dir" value="&quot;&quot;C:\cobertura-2.1.1/reports&quot;/cobertura-html&quot;" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="cob.instrumented.dir" value="&quot;C:\cobertura-2.1.1/instrumented&quot;" />
+
+          <property name="ant.project.invoked-targets" value="clean,compile,instrument,test,coverage-report,sonar,war,copy" />
+
+          <property name="sonar.projectKey" value="CalcKey" />
+
+      </properties>
+
+      <testcase classname="test.calc.EMICalcTest" name="testcalculateEMI_1" time="0.273" />
+
+      <system-out><![CDATA[13:31:38,812 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:31:38,813 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:31:38,813 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:38,813 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+13:31:38,814 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml]
+13:31:38,814 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1.jar!/logback.xml]
+13:31:38,832 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@4590c9c3 - URL [jar:file:/C:/cobertura-2.1.1/cobertura-2.1.1-sources.jar!/logback.xml] is not of type file
+13:31:38,902 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:31:38,904 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:31:38,911 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:31:38,930 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:31:39,025 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [net.sourceforge.cobertura] to INFO
+13:31:39,025 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+13:31:39,025 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:31:39,026 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:31:39,028 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@32e6e9c3 - Registering current configuration as safe fallback point
+
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

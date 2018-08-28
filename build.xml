@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="calculator" xmlns:sonar="antlib:org.sonar.ant">
+	<property  file="tasks.properties" />
+	<!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
+	<!--property name="sonar.host.url" value="http://localhost:9000" />
+	<property name="sonar.libraries" value=".\\lib\\sonarqube-ant-task-2.5.jar" /-->
+
+	<!-- Define the SonarQube project properties -->
+	<!--property name="sonar.projectKey" value="CalcKey" />
+	<property name="sonar.projectName" value="Simple Calculator" />
+	<property name="sonar.projectVersion" value="1.0" />
+	<property name="sonar.sources" value="src" />
+	<property name="sonar.java.binaries" value="build" />
+	<property name="sonar.language" value="java" />
+	<property name="sonar.sourceEncoding" value="UTF-8" /-->
+	
+	<!-- cobertura properties -->
+	<!--property name="cobertura.dir" value="C:\\cobertura-2.1.1" />
+	<property name="cob.instrumented.dir" value="${cobertura.dir}/instrumented" />
+	<property name="cob.reports.dir" value="${cobertura.dir}/reports" />
+	<property name="cob.reports.xml.dir" value="${cob.reports.dir}/junit-xml" />
+	<property name="cob.reports.html.dir" value="${cob.reports.dir}/junit-html" />
+	<property name="cob.coverage.xml.dir" value="${cob.reports.dir}/cobertura-xml" />
+	<property name="cob.coverage.html.dir" value="${cob.reports.dir}/cobertura-html" /-->
+
+	
+	<!-- Compile classpath. -->
+	<path id="compile.classpath">
+		<fileset dir=".\\WebContent\\WEB-INF">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	
+	<!-- JUnit classpath. -->
+	<path id="classpath.test">
+		<pathelement location=".\\lib\\org.junit_4.12.0.v201504281640\\junit.jar"/>
+		<fileset dir=".\\lib\\org.junit_4.12.0.v201504281640" includes="*.jar"/>
+		<pathelement location=".\\lib\\hamcrest-core-1.3.jar"/> 
+		<pathelement location=".\\lib\\log4j-1.2.17.jar"/> 
+		<pathelement location=".\\build\\classes"/>
+		<pathelement location=".\\cobertura\\instrumented" />
+	</path>
+	
+	<!-- cobertura task definition -->
+	<path id="cobertura.classpath">
+	    <fileset dir="C:\\cobertura-2.1.1">
+	      <include name="*cobertura*.jar" />
+	      <include name="lib/**/*.jar" />
+	    </fileset>
+	</path>
+	<taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
+	  
+	<target name="clean">
+		<delete dir="dist" />
+		<delete dir="build" />
+		<delete dir="cobertura" />
+		<delete file="cobertura.ser" />
+	</target>
+
+	<target name="compile">
+		<mkdir dir=".\\build" />
+		<mkdir dir=".\\build\\classes" />
+		<mkdir dir=".\\WebContent\\WEB-INF\\lib" />
+		<mkdir dir=".\\WebContent\\WEB-INF\\classes" />
+		<javac includeantruntime="true" destdir=".\\build\\classes" debug="true" srcdir=".\\src">
+			<classpath refid="classpath.test" />
+			<classpath refid="compile.classpath" />
+			<classpath refid="cobertura.classpath" />
+		</javac>
+	</target>
+	
+	<target name="instrument"> 
+		<mkdir dir="cobertura"/>
+		<mkdir dir="cobertura/reports"/>
+		<mkdir dir="cobertura/instrumented"/>
+		<mkdir dir="cobertura/reports/junit-xml"/>
+		<mkdir dir="cobertura/reports/junit-html"/>
+		<mkdir dir="cobertura/reports/cobertura-xml"/>
+		<mkdir dir="cobertura/reports/cobertura-html"/>
+		<cobertura-instrument todir="./cobertura/instrumented" >
+			<ignore regex="org.apache.log4j.*" />
+			<fileset dir=".\\build\\classes">
+			   <include name="**/*.class"/>
+			   <exclude name="**/*Test.class"/>
+			</fileset>
+			<includeclasses regex=".*" />
+			
+		</cobertura-instrument>
+	</target>
+	
+	<target name="test">
+		<mkdir dir=".\\build\\report" />
+		<junit printsummary="on" haltonfailure="yes" fork="true" >
+			<sysproperty key="net.sourceforge.cobertura.datafile" file=".//cobertura.ser" />
+			<classpath>
+				<pathelement location=".\\cobertura\\instrumented"/>
+				<pathelement location=".\\build\\classes"/>
+				<path refid="cobertura.classpath"/>
+				<path refid="classpath.test"/>
+			 </classpath>
+	        <formatter type="xml" />
+	    	<batchtest todir=".\\build\\report" fork="true">
+	    		<!--fileset dir=".\\build\\classes">
+	    		     <include name="**/*Test.class" />
+	    		</fileset-->
+	    		<fileset dir=".\\src" includes="**\\*Test.java" />
+	    	</batchtest>
+	    </junit>
+		<junitreport todir=".\\cobertura\\reports\\junit-xml">
+		    <fileset dir=".\\build\\report">
+		         <include name="TEST-*.xml" />
+		    </fileset>
+			<report format="noframes" todir=".\\cobertura\\reports\\junit-xml" />
+		</junitreport>
+	  </target>
+	
+	
+	
+	<target name="coverage-report" >
+	    <cobertura-report  datafile=".\\cobertura.ser" destdir=".\\cobertura\\reports\\cobertura-html" format="html">
+	    	<fileset dir=".\\src">
+	    	   <include name="**/*.java" />
+	    	   <exclude name="**/*Test.java" />
+	    	</fileset>
+	    </cobertura-report>
+		<cobertura-report  datafile=".\\cobertura.ser" destdir=".\\cobertura\\reports\\cobertura-xml" format="xml">
+			<fileset dir=".\\src">
+				<include name="**/*.java" />
+				<exclude name="**/*Test.java" />
+			</fileset>
+		</cobertura-report>
+	</target>
+
+	<!-- Define SonarQube Scanner for Ant Target -->
+	<target name="sonar">
+		<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+			<!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+			<classpath path=".\\lib\\sonarqube-ant-task-2.5.jar" />
+		</taskdef>
+
+		<!-- Execute SonarQube Scanner for Ant Analysis -->
+		<sonar:sonar />
+	</target>
+
+	<target name="war" depends="compile">
+		<mkdir dir=".\\dist" />
+		<war destfile="dist/calculator.war" webxml=".\\WebContent\\WEB-INF\\web.xml">
+			<fileset dir=".\\WebContent" />
+			<filename name=".\\WebContent\\style.css"/>
+			<lib dir=".\\WebContent\\WEB-INF\\lib" />
+			<classes dir=".\\build\\classes" />
+		</war>
+	</target>
+	
+	<target name="copy" depends="war">
+		<copy todir="C:\\apache-tomcat-7.0.82\\webapps">
+			<fileset dir=".\\dist" />
+		</copy>
+	</target>
+	
+	
+</project>
