@@ -40,7 +40,7 @@ body, html {
 .tableclass {
 	margin: auto;
      width: 50%;
-     border: 3px solid RED;
+     border: 3px solid BLACK;
      background-color: #b0e0e6;
     padding: 10px;
 }
